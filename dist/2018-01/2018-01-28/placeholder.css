@@ -1,0 +1,12 @@
+.blank-1, .blank-2 {
+  clear: both;
+  overflow: hidden;
+}
+
+.blank-1 {
+  height: 1px;
+}
+
+.blank-2 {
+  height: 2px;
+}

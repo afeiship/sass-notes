@@ -14,7 +14,7 @@
 
     gulp.task('styles', function () {
         return gulp
-            .src('src/**/*.sagss')
+            .src(['src/**/*.sass'])
             .pipe($.sassImportJson({isScss: false}))
             .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
             .pipe(gulp.dest('dist'));
