@@ -17,6 +17,7 @@
             .src(['src/**/*.scss'])
             .pipe($.sassImportJson({isScss: true}))
             .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
+            .pipe($.autoprefixer())
             .pipe(gulp.dest('dist'));
     });
 
