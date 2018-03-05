@@ -1,0 +1,6 @@
+$grid-count: 24;
+@for $value from 1 through $grid-count {
+    .grid-#{$value}-#{$grid-count} {
+        width: percentage($value/$grid-count);
+    }
+}
