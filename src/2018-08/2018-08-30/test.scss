@@ -1,0 +1,22 @@
+// WIll caut error in webpack 1.x react-button project.
+$react-button-options: (
+  primary:    #387ef5,
+  secondary:  #32db64,
+  wechat:    #1aad19,
+  size:(
+    small: 10px,
+    normal: 16px,
+    large: 20px
+  )
+)!default;
+
+
+$size: map-get($react-button-options, size);
+
+.test{
+  @each $key, $value in $size{
+    &[data-size=#{$key}]{
+      font-size:$value;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.test[data-size=small] {
+  font-size: 10px;
+}
+
+.test[data-size=normal] {
+  font-size: 16px;
+}
+
+.test[data-size=large] {
+  font-size: 20px;
+}
