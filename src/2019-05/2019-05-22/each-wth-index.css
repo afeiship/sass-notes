@@ -1,0 +1,19 @@
+.icon--init {
+  object-fit: 0 0px;
+}
+
+.icon--loading {
+  object-fit: 0 -20px;
+}
+
+.icon--loaded {
+  object-fit: 0 -40px;
+}
+
+.icon--stop {
+  object-fit: 0 -60px;
+}
+
+.icon--replay {
+  object-fit: 0 -80px;
+}

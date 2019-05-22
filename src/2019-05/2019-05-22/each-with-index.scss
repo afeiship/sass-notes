@@ -1,0 +1,11 @@
+$status-list: (init, loading, loaded, stop, replay);
+
+@each $status in $status-list {
+  $index: index($status-list, $status) - 1;
+  $value: $index * -20;
+  .icon {
+    &--#{$status} {
+        object-fit: 0 #{$value}px;
+    }
+  }
+}
